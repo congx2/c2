@@ -5,7 +5,17 @@ const config = {
     description: `Current Env: ${process.env.NODE_ENV}`,
     version: '1.0',
     tag: 'Api List',
-    path: 'api'
+    path: 'api',
+    servers: [
+      {
+        url: 'https://baidu.com',
+        description: '百度啊'
+      },
+      {
+        url: 'https://goggle.com',
+        description: '谷歌啊'
+      }
+    ]
   },
 
   mongodb: {

@@ -1,5 +1,5 @@
 export const ENV = {
-  DEV: 'development',
+  DEV: 'dev',
   SIT: 'sit',
-  PRO: 'production'
+  PRO: 'pro'
 }

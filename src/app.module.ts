@@ -4,6 +4,7 @@ import { MongooseModule, MongooseModuleFactoryOptions } from '@nestjs/mongoose'
 import { AppController } from './app.controller'
 import { AppService } from './app.service'
 import { BannerModule } from './modules/banner/banner.module'
+import { AuthModule } from './modules/auth/auth.module'
 import configLoader from '@configs/index'
 
 @Module({
@@ -22,7 +23,9 @@ import configLoader from '@configs/index'
       inject: [ConfigService]
     }),
 
-    BannerModule
+    BannerModule,
+
+    AuthModule
   ],
   controllers: [AppController],
   providers: [AppService]
